@@ -1,3 +1,5 @@
+import userData from '../fixtures/users/userData.json'
+
 describe('Orange HRM Tests', () => {
 
     const selectorsList = {
@@ -7,6 +9,8 @@ describe('Orange HRM Tests', () => {
       sectionTitleTopBar: ".oxd-text.oxd-topbar-header-breadcrumb-module",
       wrongCredentialAlert: '.oxd-alert'
     }
+    
+    
 
   it('Login - sucess', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
